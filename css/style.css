@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/back.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* main header styles */
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 99;
+    color: #dfdfdf;
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.logo>h1 {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    width: 50%;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+}
+
+nav ul li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+#create-account {
+    background: #706f6f;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/* banner styles */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 150px;
+    color: #fff;
+}
+
+.banner h3 {
+    padding-top: 20px;
+    font-size: 2rem;
+}
+
+.banner p {
+    margin-top: 20px;
+    width: 50%;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+#banner-btn {
+    margin-top: 20px;
+    padding: 20px;
+    width: 20%;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: #dfdfdf;
+    text-transform: uppercase;
+}
+
+
+/* end of banner styles */
+
+
+/* footer style */
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons i {
+    padding: 20px;
+}
+
+.fab {
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+/* end of footer style */

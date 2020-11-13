@@ -11,5 +11,4 @@ function showNavbar() {
         navbar.style.visibility = "hidden";
     }
 }
-
-const postContainer = document.getElementById('posts');
+// END OF TOGGLE FUNCTIONALITY
