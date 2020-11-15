@@ -1,6 +1,6 @@
 // TOGGLE FUNCTIONALITY
 const toggleButton = document.querySelector('.toggle');
-const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.sidenav-menu');
 
 toggleButton.addEventListener('click', showNavbar);
 

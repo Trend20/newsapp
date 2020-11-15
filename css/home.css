@@ -8,7 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.container {
+.wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     position: fixed;
     z-index: 99;
     color: #dfdfdf;
@@ -146,7 +146,7 @@ nav ul li a:hover {
 
 .sidenav {
     height: 100%;
-    width: 30%;
+    width: 20%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -156,39 +156,43 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 20px;
 }
 
 .toggle {
     margin-left: 20px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     cursor: pointer;
     position: fixed;
     top: 15%;
 }
 
-.navbar {
-    margin-top: 60px;
+.sidenav-menu {
+    margin-top: 30px;
     visibility: hidden;
+    flex-direction: column;
+    margin-left: 10px;
 }
 
-.nav-links {
+.sub-menu {
     display: flex;
-    padding-top: 30px;
+    padding-top: 5px;
     align-items: center;
-    padding: 10px;
     border-radius: 50px;
     height: auto;
     cursor: pointer;
-    width: 50%;
+    width: 20%;
 }
 
-.nav-links:hover {
+.sub-menu>h3 {
+    font-size: 1rem;
+}
+
+.sub-menu:hover {
     background: #cff1e3;
 }
 
-.nav-links i {
-    font-size: 2rem;
+.sub-menu i {
+    font-size: 1.5rem;
     margin-right: 30px;
 }
 
@@ -218,7 +222,7 @@ nav ul li a:hover {
     flex-direction: column;
     height: auto;
     margin-top: 100px;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-bottom: 100px;
 }
 
@@ -236,7 +240,7 @@ nav ul li a:hover {
 }
 
 #form input {
-    width: 80%;
+    width: 100%;
     padding: 15px;
     height: auto;
     outline: none;
@@ -266,28 +270,28 @@ nav ul li a:hover {
     grid-gap: 20px;
 }
 
+
+/* 
 .card {
     margin-top: 30px;
-}
-
-.post {
+    border: 1px solid #222;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 100%;
-    margin-top: 50px;
-    border: 1px solid #222;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-.post:hover {
-    background-color: #f5e9e9;
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.post-contents {
+.card-contents {
     line-height: 1.5;
     width: 100%;
 }
@@ -325,7 +329,7 @@ nav ul li a:hover {
 
 .fa-heart:hover {
     color: #ec3c3c;
-}
+} */
 
 
 /* end of main content */
@@ -340,61 +344,11 @@ nav ul li a:hover {
     z-index: 1;
     top: 0;
     right: 0;
-    background: rgb(184, 176, 176);
     overflow-x: hidden;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.sidebar>h3 {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 100px;
-}
-
-
-/* The navigation menu links */
-
-.sidebar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
-.reactions {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    align-items: center;
-    font-size: 2rem;
-    padding-top: 50px;
-}
-
-.reactions>i {
-    font-size: 2rem;
-    margin-right: 30px;
-}
-
-#like {
-    color: red;
-}
-
-#dislike {
-    color: royalblue;
-}
-
-#no-opinion {
-    color: green;
 }
 
 
