@@ -270,7 +270,7 @@
                 visibility: hidden;
                 flex-direction: column;
                 position: absolute;
-                margin-top: 120px;
+                margin-top: 100px;
                 background: #000;
                 margin-left: -10px;
                 color: #fff;
@@ -360,7 +360,7 @@
                 visibility: hidden;
                 flex-direction: column;
                 position: absolute;
-                margin-top: 120px;
+                margin-top: 100px;
                 background: #000;
                 margin-left: -10px;
                 color: #fff;
@@ -446,10 +446,10 @@
                 visibility: hidden;
                 flex-direction: column;
                 position: absolute;
-                margin-top: 120px;
                 background: #000;
                 margin-left: -10px;
                 color: #fff;
+                margin-top: 100px;
             }
             nav ul {
                 width: 100%;
