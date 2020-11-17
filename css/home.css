@@ -55,6 +55,11 @@
             display: flex;
             width: 100%;
         }
+
+        #accounts{
+            display: flex;
+            justify-content: space-between;
+        }
         
         nav ul li a {
             color: #fff;
