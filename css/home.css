@@ -71,6 +71,11 @@
         .active {
             color: #c7701f;
         }
+        
+        header i {
+            font-size: 2rem;
+            visibility: hidden;
+        }
         /* end of header styles */
         
         .sidenav {
@@ -231,6 +236,8 @@
             align-items: center;
         }
         /* end of sidebar contents */
+        /* footer */
+        /* end of footer styles */
         /* mobile responsiveness */
         
         @media (max-width: 320px) {
@@ -260,6 +267,7 @@
             nav {
                 display: flex;
                 width: 70%;
+                visibility: hidden;
             }
             nav ul {
                 width: 100%;
@@ -276,6 +284,10 @@
                 display: flex;
                 align-items: center;
                 font-size: .5rem;
+            }
+            header i {
+                font-size: 2rem;
+                visibility: visible;
             }
             .sidenav,
             .sidebar {
@@ -336,6 +348,7 @@
             nav {
                 display: flex;
                 width: 70%;
+                visibility: hidden;
             }
             nav ul {
                 width: 100%;
@@ -352,6 +365,10 @@
                 display: flex;
                 align-items: center;
                 font-size: .5rem;
+            }
+            header i {
+                font-size: 2rem;
+                visibility: visible;
             }
             .sidenav,
             .sidebar {
@@ -411,6 +428,7 @@
             nav {
                 display: flex;
                 width: 70%;
+                visibility: hidden;
             }
             nav ul {
                 width: 100%;
@@ -427,6 +445,10 @@
                 display: flex;
                 align-items: center;
                 font-size: .5rem;
+            }
+            header i {
+                font-size: 2rem;
+                visibility: visible;
             }
             .sidenav,
             .sidebar {
