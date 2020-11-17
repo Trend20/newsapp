@@ -210,14 +210,25 @@
         
         #form {
             display: flex;
-            justify-content: center;
             align-items: center;
             margin-top: 50px;
             cursor: pointer;
         }
         
+        #form input {
+            width: 80%;
+            outline: none !important;
+        }
+        
         #form i {
             color: #4141f1;
+            border: 1px solid rgb(195, 192, 192);
+            width: 10%;
+            height: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         /* end of sidebar contents */
         /* mobile responsiveness */
@@ -277,9 +288,6 @@
                 align-items: center;
                 flex-direction: column;
                 height: auto;
-                /* margin-top: 100px;
-                margin-left: 3px;
-                margin-bottom: 100px; */
                 margin: auto;
                 margin-top: 30px;
             }
