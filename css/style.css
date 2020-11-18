@@ -195,6 +195,24 @@
             width: 18rem;
         }
 
+        .decision{
+            display: flex;
+            align-items: center;
+        }
+
+        .like,
+        .dislike{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .count{
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
         /* end of main contents */
 
 
