@@ -21,6 +21,22 @@ const exploreButton = document.getElementById('explore');
 const likeButton = document.querySelectorAll('#like-button');
 const dislikeButton = document.querySelectorAll('#dislike-button');
 
+// select the count paragraph
+const likeCount = document.querySelectorAll('.likecount');
+const dislikeCount = document.querySelectorAll('.dislikecount');
+
+
+// add like events
+likeButton.addEventListener('click', addCount);
+
+
+let counter = 0;
+function addCount(){
+ if(true)
+ counter++;
+ likeCount.values(counter);
+}
+
 
 // search through the page
 // search input field
