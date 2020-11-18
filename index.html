@@ -21,56 +21,7 @@
 
     <!-- Custom CSS -->
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
-    <style>
-        .sideNav {
-           height: 100vh;
-           width: 0;
-           position: fixed;
-           z-index: 1;
-           top: 10%;
-           left: 0;
-           background-color: rgb(46, 218, 195);
-           overflow-x: hidden;
-           padding-top: 60px;
-           transition: 0.5s;
-           display: flex;
-           flex-direction: column;
-        }
-        .sideNav a {
-           padding: 8px 8px 8px 32px;
-           text-decoration: none;
-           font-size: 25px;
-           color: #000000;
-           font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-           display: block;
-           transition: 0.3s;
-        }
-        .sidenav a:hover {
-           color: #f1f1f1;
-        }
-        .sideNav .closeBtn {
-           position: absolute;
-           top: 0;
-           right: 10px;
-           font-size: 36px;
-           margin-left: 20px;
-        }
-        button {
-           padding: 10px;
-           color: #000;
-           font-size: 2rem;
-           border: none;
-           border-radius: 2%;
-           margin-left: 10px;
-           height: auto;
-           outline: none;
-           background: none;
-        }
-        
-        .main-content{
-           transition: 0.5s;
-        }
-        </style>
+
 </head>
 
 <body>
@@ -392,6 +343,7 @@
         <!-- end of the scrolable section -->
     </div>
     <script src="./js/app.js "></script>
+    <!-- LEFT SIDEBAR TOGGLE FUNCTIONALITY -->
     <script>
         let openBtn = document.querySelector(".openSideNav");
         openBtn.addEventListener("click", () => {
@@ -410,6 +362,7 @@
            document.querySelector('.main-content').style.marginLeft = "0px";
         }
         </script>
+         <!-- END OF LEFT SIDEBAR TOGGLE FUNCTIONALITY -->
 </body>
 
 </html>
