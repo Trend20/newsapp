@@ -193,6 +193,7 @@
 
         .card{
             width: 18rem;
+            cursor: pointer;
         }
 
         .decision{
