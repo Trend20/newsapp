@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google auth -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="542337553479-d8neouv2l1s2fmq2b6acv9hhs8t8ss3m.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <title>DataSource</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CDN link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <!-- fb button -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0&appId=645750612970282&autoLogAppEvents=1" nonce="pMZCxVaO"></script>
+    <!-- end fb button -->
+    <header>
+        <div class="logo">
+            <h1>Data Source</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li>
+                    <a href="#">Categories</a>
+                </li>
+                <li>
+                    <a href="#">Explore</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container p-5" id="accounts">
+        <div class="social-logins">
+            <!-- google login -->
+            <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+
+
+            <!-- end google login -->
+
+            <!-- facebook login button -->
+            <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
+
+            <!-- end of facebook button -->
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-5 bg-light border rounded py-3">
+                <h2 class="text-center">Login</h2>
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label for="_email">Email</label>
+                        <input type="text" name="user_email" id="_email" class="form-control" placeholder="Email" rnodeequired>
+                    </div>
+                    <div class="form-group">
+                        <label for="_pass">Password</label>
+                        <input type="password" name="user_pass" id="_pass" class="form-control" placeholder="Password" required>
+                    </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <div class="col-sm-6 bg-light rounded border py-3 offset-sm-1">
+                <h2 class="text-center">Register</h2>
+
+                <form action="/register" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="_rname">Username</label>
+                        <input type="text" name="user_name" id="_rname" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="_remail">Email</label>
+                        <input type="email" name="user_email" id="_remail" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="_rpass">Password</label>
+                        <input type="password" name="user_pass" id="_rpass" class="form-control" placeholder="Password" required>
+                    </div>
+                            <button type="submit" class="btn btn-success">Sign Up</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+    <script>
+        function onSignIn(googleUser) {
+            // Useful data for your client-side scripts:Permission denied to generate login hint for target domain.
+            var profile = googleUser.getBasicProfile();
+            console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log("Image URL: " + profile.getImageUrl());
+            console.log("Email: " + profile.getEmail());
+
+            // The ID token you need to pass to your backend:
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log("ID Token: " + id_token);
+        }
+    </script>
+</body>
+
+</html>
