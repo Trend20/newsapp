@@ -322,8 +322,10 @@
                 margin-top: 100px;
             }
             #form input {
-                width: 100%;
+                width: 80%;
                 outline: none !important;
+                justify-content: center;
+                margin: auto;
             }
             
             #form i {
@@ -430,8 +432,10 @@
                 margin-top: 100px;
             }
             #form input {
-                width: 100%;
+                width: 80%;
                 outline: none !important;
+                justify-content: center;
+                margin: auto;
             }
             
             #form i {
@@ -535,8 +539,10 @@
                 margin-top: 100px;
             }
             #form input {
-                width: 100%;
+                width: 80%;
                 outline: none !important;
+                justify-content: center;
+                margin: auto;
             }
             
             #form i {
