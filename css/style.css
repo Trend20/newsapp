@@ -45,7 +45,6 @@
         nav {
             display: flex;
             width: 50%;
-            margin-left: 50px;
         }
         
         nav ul {
@@ -109,7 +108,7 @@
             z-index: 1;
             top: 10%;
             left: 0;
-            background-color: #4e4e4e;
+            background-color: #fff;
             overflow-x: hidden;
             padding-top: 60px;
             transition: 0.5s;
@@ -126,7 +125,7 @@
             transition: 0.3s;
          }
          .sidenav a:hover {
-            color: #f1f1f1;
+            color: #8d8a8a;
          }
          .sideNav .closeBtn {
             position: absolute;
@@ -148,6 +147,30 @@
             margin-top: 25px;
          }
          
+         #explore{
+             width: 50%;
+             margin-left: 30px;
+         }
+
+         .stats{
+             margin-left: 20px;
+             display: flex;
+             align-items: center;
+         }
+
+         #like-counts{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+
+         #dislike-counts{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
          .main-content{
             transition: 0.5s;
          }
@@ -174,12 +197,13 @@
             align-items: center;
             margin-top: 50px;
             cursor: pointer;
-            width: 100%;
+            width: 105%;
+            justify-content: center;
+            margin-left: 20px;
         }
         
         #form input {
             width: 100%;
-            outline: none !important;
         }
         
         #form i {
@@ -194,7 +218,7 @@
         }
 
         .card{
-            width: 18rem;
+            width: 17rem;
             cursor: pointer;
         }
 
