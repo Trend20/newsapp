@@ -302,7 +302,7 @@
                 visibility: hidden;
                 flex-direction: column;
                 position: absolute;
-                margin-top: 100px;
+                margin-top: 155px;
                 background: #000;
                 margin-left: -10px;
                 color: #fff;
@@ -345,6 +345,7 @@
                 margin: auto;
                 margin-top: 100px;
             }
+
             #form input {
                 width: 80%;
                 outline: none !important;
@@ -414,7 +415,7 @@
                 visibility: hidden;
                 flex-direction: column;
                 position: absolute;
-                margin-top: 100px;
+                margin-top: 155px;
                 background: #000;
                 margin-left: -10px;
                 color: #fff;
@@ -525,7 +526,7 @@
                 background: #000;
                 margin-left: -10px;
                 color: #fff;
-                margin-top: 100px;
+                margin-top: 155px;
             }
             nav ul {
                 width: 100%;
